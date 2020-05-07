@@ -2,220 +2,208 @@
 <html lang="en">
     <head>
         <title>A brief history of Google</title>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Manrope&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Baloo+Bhai+2&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Edvard Busck-Nielsen">
+        <meta name="description" content="Scroll or click through the history of Google.">
+
+        <link rel="shortcut icon" type="image/svg" href="favicon.svg">
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- pagePiling.js -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
     </head>
-    <body id="body">
-        <div id="background"></div>
+    <body>
+        <div class="scroll-btn" id="previous" onclick="$.fn.pagepiling.moveSectionUp();"><div></div></div>
+        <div class="scroll-btn" id="next" onclick="$.fn.pagepiling.moveSectionDown();"><div></div></div>
         <div data-aos="flip-right" id="timeline-position"></div>
-        <div id="timeline-items">
-            <div class="timeline-item timeline-item-first">
-                *
-            </div>
-            <div class="timeline-item">
-                1995
-            </div>
-            <div class="timeline-item">
-                1996
-            </div>
-            <div class="timeline-item">
-                1998
-            </div>
-            <div class="timeline-item">
-                1999
-            </div>
-            <div class="timeline-item">
-                2000
-            </div>
-            <div class="timeline-item">
-                2003
-            </div>
-            <div class="timeline-item">
-                2004
-            </div>
-            <div class="timeline-item">
-                2005
-            </div>
-            <div class="timeline-item">
-                2006
-            </div>
-            <div class="timeline-item">
-                2007
-            </div>
-            <div class="timeline-item">
-                2008
-            </div>
-            <div class="timeline-item">
-                2009
-            </div>
-            <div class="timeline-item">
-                2011
-            </div>
-            <div class="timeline-item">
-                2015
-            </div>
-            <div class="timeline-item">
-                2016
-            </div>
-            <div class="timeline-item">
-                2017
-            </div>
-            <div class="timeline-item">
-                2019
-            </div>
-            <div class="timeline-item">
-                ?
-            </div>
-        </div>
+        <img data-aos="fade-up" src="assets/scroll.gif" id="scroll" alt="scroll">
 
-        <main>
+        <main id="pagepiling">
             <div class="section section-first">
+                <p class="timeline-item">#</p>
                 <div class="card header">
-                    <h1 data-aos="fade">A brief history of Google</h1>
-                    <p data-aos="flip-up">Scroll through the history of Google.</p>
-                    <h4 data-aos="fade"><em>1995-2019</em></h4>
-                </div>
-            </div>
-            <img data-aos="fade-up" src="assets/scroll.gif" id="scroll" alt="scroll">
-
-            <div class="section">
-                <div class="card header">
-                    <h2 data-aos="flip-left">1995</h2>
-                    <p data-aos="fade">Founders Larry Page and Sergey Brin met at Stanford Univeristy.</p>
+                    <h1 data-aos="fade" data-aos-delay="200">A brief history of Google</h1>
+                    <p data-aos="flip-up">Scroll or click through the history of Google.</p>
+                    <h4 data-aos="fade" data-aos-delay="200"><em>1995-2019</em></h4>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">1995</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">1996</h2>
-                    <p data-aos="fade">They built a search engine called BackRub, that stood out because of it's use of links to rank webpages.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">1995</h2>
+                    <p data-aos="fade" data-aos-delay="200">Founders Larry Page and Sergey Brin met at Stanford University.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">1996</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">1998</h2>
-                    <p data-aos="fade">BackRub was renamed to Google (a play on the word mathematical term "googol", a 1 followed by 100 zeros). The company was born when co-founder Andy Bechtolsheim wrote a check for $100,000 to "Google Inc." which until then didn't exist.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">1996</h2>
+                    <p data-aos="fade" data-aos-delay="200">They built a search engine called BackRub, that stood out because of it's use of links to rank websites.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">1998</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">1999</h2>
-                    <p data-aos="fade">Google relocated to Mountain View, and the redesign their logo.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">1998</h2>
+                    <p data-aos="fade" data-aos-delay="200">BackRub was renamed to Google (a play on the mathematical term <em>"googol"</em>, a 1 followed by 100 zeros).</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">1999</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2000</h2>
-                    <p data-aos="fade">Google introduced AdWords, a self-serivce tool for creating online ad campaigns.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">1999</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google relocated to Mountain View, and they redesigned their logo.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2000</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2003</h2>
-                    <p data-aos="fade">AdSense launched as a tool for making revenue of ads on your websites.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2000</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google introduced AdWords, a self-service tool for creating online ad campaigns.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2003</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2004</h2>
-                    <p data-aos="fade">Gmail was launched on April Fool's Day.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2003</h2>
+                    <p data-aos="fade" data-aos-delay="200">AdSense launched as a tool for making revenue of ads on your websites.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2004</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2005</h2>
-                    <p data-aos="fade">Google acquired the digital mapping company Keyhole, and soon after launched Google Maps & Google Earth.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2004</h2>
+                    <p data-aos="fade" data-aos-delay="200">Gmail was launched on April Fool's Day.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2005</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2006</h2>
-                    <p data-aos="fade">YouTube was acquired by Google.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2005</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google acquired the digital mapping company Keyhole, and soon after launched Google Maps & Google Earth.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2006</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2007</h2>
-                    <p data-aos="fade">The mobile phone operating system "Android" was announced. Streetview launched in the U.S.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2006</h2>
+                    <p data-aos="fade" data-aos-delay="200">YouTube was acquired by Google.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2007</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2008</h2>
-                    <p data-aos="fade">The Google Chrome web browser was launched.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2007</h2>
+                    <p data-aos="fade" data-aos-delay="200">The mobile phone operating system "Android" was announced. Streetview launched in the U.S.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2008</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2009</h2>
-                    <p data-aos="fade">Google Announces Chrome OS.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2008</h2>
+                    <p data-aos="fade" data-aos-delay="200">The Google Chrome web browser was launched.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2009</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2011</h2>
-                    <p data-aos="fade">Google introduced the world to Google+.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2009</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google Announces Chrome OS.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2011</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2015</h2>
-                    <p data-aos="fade">Google reorganized and the holding company Alphabet Inc. was launched.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2011</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google introduced the world to Google+.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2015</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2016</h2>
-                    <p data-aos="fade">The AI powered Google Assistant was launched, and Google Announces their new Smart Phone the Google Pixel.</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2015</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google reorganized and the holding company Alphabet Inc. was born.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2016</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2017</h2>
-                    <p data-aos="fade">Google restructured to a limited liability company (LLC).</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2016</h2>
+                    <p data-aos="fade" data-aos-delay="200">The AI powered Google Assistant was launched, and Google Announces their new Smartphone: the Google Pixel.</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2017</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">2019</h2>
-                    <p data-aos="fade">Google shuts down Google+</p>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2017</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google restructured to a limited liability company (LLC).</p>
                 </div>
             </div>
 
             <div class="section">
+                <p class="timeline-item">2019</p>
                 <div class="card header">
-                    <h2 data-aos="flip-left">What's Next?</h2>
-                    <h3 data-aos="fade">...</h3>
+                    <h2 data-aos="flip-left" data-aos-duration="300">2019</h2>
+                    <p data-aos="fade" data-aos-delay="200">Google shuts down Google+</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <p class="timeline-item">?</p>
+                <div class="card header">
+                    <h2 data-aos="flip-left" data-aos-duration="300">What's Next?</h2>
+                    <h3 data-aos="fade" data-aos-delay="200"> . . . </h3>
+                    <p class="footer" data-aos="fade" data-aos-delay="200">&copy; Edvard Busck-Nielsen 2020</p>
+                    <p class="footer" data-aos="fade" data-aos-delay="200">Google and it's products are trademarks of Google LLC.</p>
                 </div>
             </div>
         </main>
 
-        <footer id="footer">
-                <p>Edvard Busck-Nielsen 2020. Google is a trademark of Google LLC</p>
-        </footer>
-
-        <script async src="main.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+
+        <script>
+            $(document).ready(function() {
+	            $('#pagepiling').pagepiling({
+                    navigation: {
+                        'textColor': '#444',
+                        'bulletsColor': '#555',
+                    },
+                    scrollingSpeed: 700,
+                    direction: 'vertical',
+                });
+            });
+        </script>
+
+        <style>
+            #pp-nav {
+                color: #fff !important;
+            }
+        </style>
     </body>
 </html>
